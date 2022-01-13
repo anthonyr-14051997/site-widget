@@ -1,0 +1,715 @@
+html{
+	top: 0;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #080D3B;
+	top: 0px;
+	margin: 0;
+	padding: 0;
+	font-family: 'MuseoModerno', cursive;
+}
+header{
+	position: relative;
+	background:#191F58;
+	height: 10vh;
+	top: 0px;
+	display: flex;
+	justify-content: center;
+	box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.479);
+	z-index: 9999;
+	position:sticky;
+}
+#logo{
+	position: absolute;
+	left: 1em;
+}
+footer{
+	position: absolute;
+	background-color: #191F58;
+	height: 10vh;
+	width: 100%;
+	top: 98vh;
+	z-index: 9999;
+	box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.479);
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row-reverse;
+	font-family: 'MuseoModerno', cursive;
+}
+h1{
+	color:#EEFCFF;
+	justify-content: center;
+	font-size: 4vh;
+	margin-left: 10vh;
+	font-family: 'MuseoModerno', cursive;
+}
+h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 10vh;
+	border-bottom: solid 1px white;
+	color: whitesmoke;
+	font-family: 'MuseoModerno', cursive;
+}
+h3{
+	color: whitesmoke;
+	font-size: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'MuseoModerno', cursive;
+}
+.titre{
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	border-bottom: solid 1px white;
+	font-family: 'MuseoModerno', cursive;
+}
+p{
+	text-shadow: 0px 0px 1px black;
+	font-family: 'MuseoModerno', cursive;
+}
+main{
+	padding-top: 5vh;
+	padding-left: 45vh;
+}
+.block{
+	position: absolute;
+	background-color: #7D82B0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 140vh;
+	height: 80vh;
+	border-radius: 5px;
+	box-shadow: 0px 0px 15px rgb(0, 0, 0);
+}
+
+/* heure */
+
+#heure_exacte{
+	font-size: 2vh;
+	font-family: 'MuseoModerno', cursive;
+}
+
+/* date */
+
+#date_exacte{
+	width: 3vh;
+}
+
+/* calculatrice */
+
+* {
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 16px;
+}
+#calculette{
+	position: absolute;
+	visibility: hidden;
+	width: 90%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 2;
+	height: 90vh;
+}
+#calcula{
+	display: flex;
+}
+#ce{
+	background-color: #FFA337;
+}
+#formule{
+	cursor: default;
+	background: #C1F6DD;
+	border: 0;
+	width: 50%;
+	border-radius: 10px 0px 0px 10px;
+	height: 10vh;
+	font-size: 4vh;
+	padding: 2px 5px;
+}
+table {
+	background: #4C5375;
+	padding: 2vh;
+	border-radius: 30px;
+	border-spacing: 5px;
+	width: 40vh;
+	height: 50vh;
+	margin-top: 10vh;
+}
+#result {
+	background: #C1F6DD;
+	width: 50%;
+	border-radius: 0px 10px 10px 0px;
+	border: 0;
+	height: 10vh;
+	padding: 2px 5px;
+	font-size: 4vh;
+	text-align: end;
+}
+button {
+	background-color: #ffffff;
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+#egal{
+	background-color: #43DC52;
+}
+
+/* convertisseur */
+
+#convertisseur{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 2;
+	width: 100%;
+	height: 90%;
+	top: 1vh;
+	border-radius: 20px;
+	visibility: hidden;
+	font-family: 'MuseoModerno', cursive;
+	background-color: #4C5375;
+}
+.boutonmenuprincipal {
+	display: flex;
+	justify-content: center;
+	background-color: whitesmoke;
+	width: 30vh;
+	height: 10vh;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.boutonmenuprincipal:hover {
+	background-color: #F59300;
+}
+.boutonmenuprincipale:hover {
+	background-color: #F59300;
+}
+.boutonmenuprincipale {
+	display: flex;
+	justify-content: center;
+	background-color: whitesmoke;
+	width: 30vh;
+	height: 10vh;
+	border-radius: 20px;
+	cursor: pointer;
+}
+/*  
+.boutonmenuprincipales:hover {
+	background-color: #F59300;
+}
+.boutonmenuprincipales {
+	display: flex;
+	justify-content: center;
+	background-color: whitesmoke;
+	width: 30vh;
+	height: 10vh;
+	border-radius: 20px;
+	cursor: pointer;
+}
+*/
+.dropdown {
+	margin-top: 10vh;
+	position: relative;
+	display: inline-block;
+}
+.dropdown-child {
+	border-radius: 20px;
+	display: none;
+	background-color: #43DC52;
+	min-width: 50px;
+}
+.dropdown-childe {
+	border-radius: 20px;
+	display: none;
+	background-color: #43DC52;
+	min-width: 50px;
+}
+/*  
+.dropdown-childes {
+	border-radius: 20px;
+	display: none;
+	background-color: #43DC52;
+	min-width: 50px;
+}
+*/
+span{
+	color: whitesmoke;
+	font-size: 2.6vh;
+}
+input{
+	border-radius: 20px;
+}
+input:hover{
+	background-color: whitesmoke;
+	box-shadow: 0px 0px 10px black;
+}
+input:focus{
+	box-shadow: 0px 0px 10px whitesmoke;
+	background-color: #F59300;
+}
+#fleche{
+	width: 20vh;
+	height: 30vh;
+}
+
+/* meteo */
+
+#meteoo{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	margin-left: 5vh;
+	z-index: 2;
+	width: 90%;
+	height: 80%;
+	border-radius: 10px;
+	background-color: #4C5375;
+	visibility: hidden;
+	font-family: 'MuseoModerno', cursive;
+}
+.widget{
+	display: flex;
+	justify-content: row;
+	justify-content: center;
+}
+#queryLoc{
+	margin-top: 10vh;
+	border-radius: 20px;
+	-webkit-appearance: none;
+	width: 25vh;
+	height: 3vh;
+}
+#valider{
+	margin-top: 8vh;
+	margin-left: 8vh;
+	width: 7vh;
+	height: 7vh;
+	border-radius: 50px;
+	background-color: whitesmoke;
+	box-shadow: 0px 0px 20px #080D3B;
+	cursor: pointer;
+}
+#valider:hover{
+	box-shadow: 0px 0px 20px whitesmoke;
+}
+#zone_meteo{
+	color: rgb(255, 255, 255);
+	cursor: default;
+	font-size: 8vh;
+}
+#wicon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 25vh;
+	height: 25vh;
+	margin-bottom: 10vh;
+}
+#resultat{
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 15vh;
+}
+
+/* generateur de mdp */
+
+#mdpass{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	background-color: #4C5375;
+	width: 100%;
+	height: 90%;
+	z-index: 2;
+	border-radius: 10px;
+	font-family: 'MuseoModerno', cursive;
+	visibility: hidden;
+}
+.form{
+	display: flex;
+	flex-direction: column;
+}
+.chek{
+	display: inline-block;
+	margin-left: 23vh;
+	font-family: 'MuseoModerno', cursive;
+}
+.genere{
+	width: 50%;
+	text-align: center;
+	margin-left: 25vh;
+	border-radius: 20px;
+	background-color: whitesmoke;
+	box-shadow: 0px 0px 10px black;
+	font-family: 'MuseoModerno', cursive;
+}
+.monmdp{
+	width: 50%;
+	text-align: center;
+	margin-left: 25vh;
+	border-radius: 20px;
+	background-color: whitesmoke;
+	box-shadow: 0px 0px 10px black;
+	cursor: default;
+	font-family: 'MuseoModerno', cursive;
+}
+.monmdp:hover{
+	box-shadow: 0px 0px 10px whitesmoke;
+	background-color: #F59300;
+}
+.genera{
+	background-color: #43DC52;
+	box-shadow: 0px 0px 10px black;
+	border-radius: 20px;
+	width: 75%;
+	margin-left: 13vh;
+	font-family: 'MuseoModerno', cursive;
+}
+.genera:hover{
+	background-color: whitesmoke;
+	box-shadow: 0px 0px 10px black;
+}
+.genera:active{
+	background-color: #43DC52;
+	box-shadow: 0px 0px 10px black;
+}
+.info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 5vh;
+}
+.genere:hover{
+	box-shadow: 0px 0px 10px whitesmoke;
+	background-color: #F59300;
+}
+.genere:focus{
+	box-shadow: 0px 0px 10px whitesmoke;
+	background-color: #F59300;
+}
+.chapitre{
+	color: whitesmoke;
+	font-size: 3vh;
+	width: 75%;
+	margin-left: 13vh;
+	text-align: center;
+	border-radius: 20px;
+	border-bottom: solid 1px whitesmoke;
+}
+
+#checked{
+	border-radius: 10px;
+}
+
+/* juste prix */
+
+#price{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+	width: 100%;
+	border-radius: 10px;
+	visibility: hidden;
+	background-color: #4C5375;
+	font-family: 'MuseoModerno', cursive;
+}
+.container {
+	margin-top: 20px;
+	font-family: 'Lora', serif;
+	color: whitesmoke;
+}
+.jumbotron {
+	padding-top: 10px;
+}
+.btn-danger {
+	margin-top: 10px;
+}
+.secondes {
+	margin-top : -20px;
+}
+#paris {
+	transition: 0.25s;
+	visibility: hidden;
+	opacity: 0;
+}
+.chrono{
+	display: flex;
+	margin-right: 10vh;
+}
+#nombre{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 56vh;
+}
+#parie{
+	width: 50%;
+	margin-left: 32vh;
+}
+#parie:hover{
+	background-color: whitesmoke;
+	box-shadow: 0px 0px 10px black;
+}
+#commencer{
+	background-color: #43DC52;
+}
+#commencer:hover{
+	background-color: whitesmoke;
+	box-shadow: 0px 0px 10px black;
+}
+.prixMax{
+	visibility: hidden;
+}
+
+/* compteur */
+
+#compteur{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	margin-left: 5vh;
+	z-index: 2;
+	width: 90%;
+	height: 80%;
+	border-radius: 10px;
+	visibility: hidden;
+	background-color: #4C5375;
+	font-family: 'MuseoModerno', cursive;
+}
+.hazard2{
+	margin-top: 2vh;
+	display: flex;
+	justify-content: center;
+}
+
+/* plouf */
+
+#ploufplouf{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	margin-left: 5vh;
+	z-index: 2;
+	width: 90%;
+	height: 80%;
+	border-radius: 10px;
+	visibility: hidden;
+	background-color: #4C5375;
+}
+.hazard{
+	margin-top: 2vh;
+	display: flex;
+	justify-content: center;
+	visibility: hidden;
+}
+/* iframe */
+
+#iframe{
+	/*  visibility: visible;*/
+	height: 100%;
+}
+#ploufbtn{
+	width: 40%;
+	height: 1%;
+}
+#ploufbtn:hover{
+	background-color: whitesmoke;
+	box-shadow: 0px 0px 10px black;
+}
+#ploufresu{
+	cursor: default;
+}
+
+/* icon widget */
+
+#meteo:focus{
+	box-shadow: 0px 0px 10px black;
+	transition:background .5s;
+}
+#calc:focus{
+	box-shadow: 0px 0px 10px black;
+	transition:background .5s;
+}
+#convert:focus{
+	box-shadow: 0px 0px 10px black;
+	transition:background .5s;
+}
+#mdp:focus{
+	box-shadow: 0px 0px 10px black;
+	transition:background .5s;
+}
+#prix:focus{
+	box-shadow: 0px 0px 10px black;
+	transition:background .5s;
+}
+#plouf:focus{
+	box-shadow: 0px 0px 10px black;
+	transition:background .5s;
+}
+#count:focus{
+	box-shadow: 0px 0px 10px black;
+	transition:background .5s;
+}
+
+/* Menu burger */
+/*  
+#menu-burger {
+	position:absolute;
+	top:7.5em;
+	left:1.5em;
+	display:inline-block;
+	cursor:pointer;
+	z-index:9999;
+}
+#menu-burger .bar1,
+#menu-burger .bar2,
+#menu-burger .bar3 {
+	width:32px;
+	height:5px;
+	background-color:#F1F1F1;
+	margin:6px 0;
+	transition:0.4s;
+}
+#menu-burger:hover {
+	opacity:.75;
+	transition:.5s;
+}
+#menu-burger.clicked .bar1 {
+	-webkit-transform:rotate(-45deg) translate(-9px, 6px);
+	transform:rotate(-45deg) translate(-9px, 6px);}
+#menu-burger.clicked .bar2 {
+	opacity: 0;
+}
+#menu-burger.clicked .bar3 {
+	-webkit-transform:rotate(45deg) translate(-8px, -8px);
+	transform:rotate(45deg) translate(-8px, -8px);
+}
+*/
+/* Main menu (slide) */
+#menu {
+	position:fixed;
+	z-index:9998;
+	left: -3%;
+	top:auto;
+	background:#191F58; 
+	padding:0.8em 1em; 
+	width:9%;
+	min-height:100%;
+	box-shadow:1px 0 1px black;
+}
+#menu ul li {
+	list-style:none;
+}
+ul > li{
+	cursor: pointer;
+}
+#menu ul > li {
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	font-weight:700;
+	transition:background .5s;
+	padding:.3em;
+	text-align:center;
+	margin-bottom:.5em;
+}
+.icmenu{
+	width: 8vh;
+}
+#menu ul > li:hover {
+	box-shadow: 0px 0px 10px black;
+	transition:background .5s;
+}
+
+#menu.visible {
+	animation:.5s slideRight ease-in forwards;
+	transition-delay:0;
+}
+#menu.invisible {
+	animation:1s slideLeft ease-out forwards;
+	transition-delay:0;
+}
+
+/* Font police import */
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+
+/* Animations pour le menu slide */
+@keyframes slideRight {
+	from {left:-25%;}
+	to {left:0%;}
+}
+@-webkit-keyframes slideRight {
+	from {left:-25%;}
+	to {left:0%;}
+}
+@keyframes slideLeft {
+	from {left:0%;}
+	to {left:-25%;}
+}
+@-webkit-keyframes slideLeft {
+	from {left:0%;}
+	to {left:-25%;}
+}
+
+/* Responsive design */
+@media (max-width:1024px) {
+	#menu {left:-50%; width:50%;}
+	#menu-burger.clicked {position:fixed;}
+
+	/* Animations pour le menu slide */
+	@keyframes slideRight {
+		from {left:-50%;}
+		to {left:0%;}
+	}
+	@-webkit-keyframes slideRight {
+		from {left:-50%;}
+		to {left:0%;}
+	}
+	@keyframes slideLeft {
+		from {left:0%;}
+		to {left:-50%;}
+	}
+	@-webkit-keyframes slideLeft {
+		from {left:0%;}
+		to {left:-50%;}
+	}
+}
+@media (max-width:600px) {
+	#menu-burger {top:1em; right:2em; z-index:9999;}
+	#menu {left:-100%; width:100%;}
+
+	/* Animations pour le menu slide */
+	@keyframes slideRight {
+		from {left:-100%;}
+		to {left:0%;}
+	}
+	@-webkit-keyframes slideRight {
+		from {left:-100%;}
+		to {left:0%;}
+	}
+	@keyframes slideLeft {
+		from {left:0%;}
+		to {left:-100%;}
+	}
+	@-webkit-keyframes slideLeft {
+		from {left:0%;}
+		to {left:-100%;}
+	}
+}
