@@ -1,5 +1,7 @@
 # site-widget
 
+Site regroupant différents widgets
+
 ## Présentation
 
 Ce projet est un des premiers, il conciste à créer des widgets tel qu'un widget météo qui nous indique le temps à la ville recherché, une calculette, le jeu du plouf plouf... il comporte ces widget-si ainsi que bien d'autres. Conçut uniquement grâce à html, css, js la tache était rude surtout en debut de formation.
